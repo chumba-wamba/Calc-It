@@ -3,8 +3,13 @@ from calc_it.ast import *
 
 
 @parser_generator.production('expression : NUMBER')
-def expression(p):
+def expression_number(p):
     return Number(int(p[0].getstr()))
+
+
+@parser_generator.production('expression : L_PAREN expression R_PAREN')
+def expression_parens(p):
+    return p[1]
 
 
 @parser_generator.production('expression : expression EXPONENT expression')

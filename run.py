@@ -3,5 +3,6 @@ from calc_it.parser import parser
 
 
 if __name__ == "__main__":
-    tokens = lexer.lex("1+1**2*3")
+    input_string = "1+5**(2*3)"
+    tokens = lexer.lex(input_string)
     print(parser.parse(tokens).eval())

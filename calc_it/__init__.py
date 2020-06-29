@@ -7,15 +7,15 @@ lexemes = [
     "MINUS",
     "MULTIPLY",
     "DIVIDE",
-    # "L_PAREN",
-    # "R_PAREN",
+    "L_PAREN",
+    "R_PAREN",
     "NUMBER"
 ]
 precedence = [
     ("left", ["PLUS", "MINUS"]),
     ("left", ["MULTIPLY", "DIVIDE"]),
     ("right", ["EXPONENT"]),
-    # ("nonassoc", ["L_PAREN", "R_PAREN"]),
+    ("nonassoc", ["L_PAREN", "R_PAREN"]),
 ]
 
 
