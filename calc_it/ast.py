@@ -1,7 +1,7 @@
 from rply.token import BaseBox
 
 
-class Number(BaseBox):
+class Number():
     def __init__(self, value):
         self.value = value
 
@@ -9,7 +9,7 @@ class Number(BaseBox):
         return self.value
 
 
-class BinaryOp(BaseBox):
+class BinaryOp():
     def __init__(self, left, right):
         self.left = left
         self.right = right
