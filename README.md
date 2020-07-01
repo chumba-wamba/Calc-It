@@ -47,3 +47,5 @@ if __name__ == "__main__":
  ```python
   python run.py
  ```
+ 
+![Test](https://github.com/chumba-wamba/Calc-It/blob/master/assets/images/test.PNG?raw=true)
