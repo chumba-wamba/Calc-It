@@ -26,26 +26,26 @@ Follow the steps to run the web-app on your local machine:
  
  ## Usage
  1. Enter the cloned repository
- ```shell
- cd Calc-It
- ```
+    ```shell
+    cd Calc-It
+    ```
  
  2. Edit the input string in run.py
- ```python
- from calc_it.lexer import lexer
- from calc_it.parser import parser
+    ```python
+    from calc_it.lexer import lexer
+    from calc_it.parser import parser
 
 
-if __name__ == "__main__":
-    input_string = "1+5**(2*3)"
-    tokens = lexer.lex(input_string)
-    print(parser.parse(tokens).eval())
+    if __name__ == "__main__":
+       input_string = "1+5**(2*3)"
+       tokens = lexer.lex(input_string)
+       print(parser.parse(tokens).eval())
 
- ```
+    ```
  
  3. Execute the program
- ```python
-  python run.py
- ```
- 
-![Test](https://github.com/chumba-wamba/Calc-It/blob/master/assets/images/test.PNG?raw=true)
+    ```python
+     python run.py
+    ```
+
+      ![Test](https://github.com/chumba-wamba/Calc-It/blob/master/assets/images/test.PNG?raw=true)
